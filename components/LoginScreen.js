@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image } from "react-native";
 
+function LoginScreen({ navigation }) {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
 
+  const handleLogin = () => {
+    navigation.navigate("Homepage", { name, email });
+  };
  
   return (
     <View style={styles.container}>
@@ -56,7 +62,7 @@ import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image } from "reac
       </View>
     </View>
   );
-
+}
 
 const styles = StyleSheet.create({
   container: {
