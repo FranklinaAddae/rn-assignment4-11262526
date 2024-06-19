@@ -1,8 +1,8 @@
-import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import LoginScreen from './components/LoginScreen';
-import HomeScreen from './components/HomeScreen';
+import * as React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import LoginScreen from "./components/LoginScreen";
+import HomeScreen from "./components/HomeScreen";
 
 const Stack = createStackNavigator();
 
@@ -14,5 +14,5 @@ export default function App() {
         <Stack.Screen name="Homepage" component={HomeScreen} />
       </Stack.Navigator>
     </NavigationContainer>
-  );
+  );
 }
