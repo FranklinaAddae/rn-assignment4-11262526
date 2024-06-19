@@ -193,7 +193,7 @@ const jobs = [
       salary: "$110,000/y",
       company: "Tesla",
       location: "Palo Alto, US",
-      icon:"tesls",
+      icon:"tesla",
       backgroundColor: "white",
     },
   ];
